@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+  /* font-family: Overpass, 'sans-serif'; */
+
+  /* - Mobile: 375px
+- Desktop: 1440px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--Very-Dark-Blue);
+}
+
+/* Component */
+.card {
+  width: 25.625rem;
+  height: 25.9375rem;
+  background: var(--Dark-Blue);
+  border-radius: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+img {
+  background: #2f3649;
+  border-radius: 50%;
+  margin-top: 2.5rem;
+  padding: 0.938rem;
+  margin-bottom: 1.75rem;
+}
+
+.header-container {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--White);
+  font-family: Overpass, "sans-serif";
+  font-weight: 700;
+}
+
+.description-container {
+  width: 20.625rem;
+  color: var(--Medium-Grey);
+  font-size: 0.938rem;
+  text-align: justify;
+  text-align-last: left;
+  margin-bottom: 1.75rem;
+}
+
+.user-options {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.user-options button {
+  display: inline-block;
+  background: #343b47;
+  color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+  height: 3.125rem;
+  width: 3.125rem;
+  border: none;
+  margin: 0 0.5rem;
+}
+.user-options button:hover {
+  background: #7d8796;
+}
+
+.user-options button:focus {
+  background: #fb7b19;
+  border: 1px solid #fff;
+  color: black;
+}
+
+#submit-button {
+  width: 100%;
+  background: var(--Orange);
+  border: none;
+  color: var(--White);
+  font-family: Overpass, "sans-serif";
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+
+/* Thank You */
+#thank-you-container {
+  width: 25.625rem;
+  height: 25.9375rem;
+  background: var(--Dark-Blue);
+  border-radius: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  display: block;
+}
+
+.thanks-img {
+  margin-left: 6.5rem;
+  background: transparent;
+  border-radius: 0;
+}
+
+.you-selected {
+  height: 2rem;
+  width: 12rem;
+  border-radius: 2.5rem;
+  background: #343b47;
+  color: var(--Orange);
+  margin-left: 6.75rem;
+  margin-bottom: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks-header {
+  color: var(--White);
+  font-family: Overpass, "sans-serif";
+  margin-bottom: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.appreciation-header p {
+  width: 20.625rem;
+  color: var(--Medium-Grey);
+  font-size: 0.938rem;
+  text-align: justify;
+  text-align: center;
+  margin-left: 2.125rem;
+}
+
+/* Footer */
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-container {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description-container {
+    font-size: 0.875rem;
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+
+  .user-options button {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0 0.25rem;
+  }
+
+  #submit-button {
+    height: 2.5rem;
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+  }
+
+  #thank-you-container {
+    width: 90%;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .thanks-img {
+    margin-left: 3.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .you-selected {
+    height: 2rem;
+    width: 10rem;
+    margin-left: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .thanks-header {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .appreciation-header p {
+    font-size: 0.875rem;
+    width: 90%;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+}
